@@ -1,0 +1,109 @@
+* {                                     /* ISSO PARA PAGINA INTEIRA */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {                                    /* PARA TIRAR O PONTO . QUE TINHA NA FRENTE DA IMAGEM*/
+    list-style: none;
+}
+
+body{                                   /*IMAGEM DE FUNDO*/
+    background-image: url(./va.jpg);    /*background-image: url para imagem de fundo */
+    background-position: top center;    /*background para centralizar imagem de fundo */
+    background-size: 100% auto;         /*para repetir a imagem lagura 100% */
+    background-repeat: no-repeat;
+    background-color : #290d3b 
+}
+
+body * {                                /*TODA A FONTE DO HTML*/
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+header{                                 /*TAMANHO DA PAGINA NO TOP*/
+    padding-top: 32px;
+}
+
+
+header div {                       /*IMAGEM DO PERFIL*/
+    width: 120px;                  /*TAMANHO DA IMAGEM */
+    margin: auto;                  /*CENTRALIZAR IMAGEM*/
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);      
+    border-radius: 59px;           /*BORDA DA COR DA IMG*/
+
+    display: flex;                 /*AJUSTAR A IMG DE FUNDO*/
+    padding: 4px;
+
+    transition: transform .3s;     /*EFEITO AO PASSAR O MAUSE*/
+}
+
+header div:hover{                  
+    transform: scale(1.1);
+}
+
+header img{
+    width: 100%;
+    border-radius: 59px;
+}
+
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: whitesmoke;
+}
+
+ul {
+    display: flex;    
+    flex-wrap: wrap;                 /*Ajuste das imagens dentro das caixas */
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+section ul li {                      /*DECLARAR PARA O EFEITO DO ZOOM E QUANTO TEMPO DE DURAÇÃO*/
+    transition: transform .3s;
+}
+
+ul li:hover {                        /*DECLARAR O EFEITO DE ZOOM QUANDO PASSAR O MAUSE POR CIMA*/ 
+    transform: scale(1.1);
+}
+
+.games-list img {
+    width: 90px;                     /* nao curti ficou tudo pequeno no site mudei para 190px*/
+    border-radius: 8px;
+}
+
+.channels-I-study-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 3px solid #443E54;
+    
+}
